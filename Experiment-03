@@ -1,0 +1,72 @@
+Aim:- Write a program to implement various String operations in Python
+
+Algorithm:-
+
+Step 1: Start
+Step 2: Input a string from the user.
+Step 3: Display the original string.
+Step 4: Find and display the length of the string using len() function.
+Step 5: Convert the string to uppercase using upper() and display it.
+Step 6: Convert the string to lowercase using lower() and display it.
+Step 7: Input a substring and find its position in the string using find().
+Step 8: Input old and new substrings and replace them using replace() function.
+Step 9: Split the string into words using split() function.
+Step 10: Input two strings and concatenate them.
+Step 11: Check whether the concatenated string is alphabetic using isalpha().
+Step 12: Check whether the concatenated string is numeric using isdigit().
+Step 13: Display all results.
+Step 14: Stop.
+
+
+Code:- #String Operations
+
+s = input("Enter a string: ")
+
+print("Original string:", s)
+print("Length of string:", len(s))
+print("Upper case:", s.upper())
+print("Lower case:", s.lower())
+
+sub = input("Enter a substring to find: ")
+print("Position:", s.find(sub))
+
+old = input("Enter the old string: ")
+new = input("Enter the new string: ")
+print("After replacement:", s.replace(old, new))
+
+print("Split string:", s.split())
+
+str1 = input("Enter first string: ")
+str2 = input("Enter second string: ")
+
+concat = str1 + str2
+
+print("Concatenation:", concat)
+print("Is Alphabetic?", concat.isalpha())
+print("Is Numeric?", concat.isdigit())
+
+
+Output:-
+
+Enter a string: Hello World
+
+Original string: Hello World
+Length of string: 11
+Upper case: HELLO WORLD
+Lower case: hello world
+
+Enter a substring to find: World
+Position: 6
+
+Enter the old string: Hello
+Enter the new string: Hi
+After replacement: Hi World
+
+Split string: ['Hello', 'World']
+
+Enter first string: Python
+Enter second string: Lab
+
+Concatenation: PythonLab
+Is Alphabetic? True
+Is Numeric? False
