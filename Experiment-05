@@ -1,0 +1,76 @@
+Aim:- Write a Program to demonstrate Tuple and Related Functions in Python 
+
+Algorithm:-
+
+Step 1: Start
+Step 2: Create a tuple with student name, age, department, and marks.
+Step 3: Display the student tuple.
+Step 4: Display name, age, and department using indexing.
+Step 5: Extract marks from the tuple.
+Step 6: Find total, highest, and lowest marks.
+Step 7: Find length of the tuple.
+Step 8: Count occurrence of 88 and find index of 91.
+Step 9: Add grade to the tuple.
+Step 10: Display the updated tuple.
+Step 11: Stop.
+
+Code: #TUPLE
+
+print("Student Record Case Study")
+
+student = ("Sundaram", 21, "BCA", 88, 91, 79)
+
+print("Student Tuple:", student)
+
+print("Name:", student[0])
+print("Age:", student[1])
+print("Department:", student[2])
+
+marks = student[3:6]
+
+print("Marks:", marks)
+
+print("Total marks:", sum(marks))
+print("Highest mark:", max(marks))
+print("Lowest mark:", min(marks))
+
+print("Length of Tuple:", len(student))
+
+print("Count of 88:", student.count(88))
+print("Index of 91:", student.index(91))
+
+new_student = student + ("A Grade",)
+print("Updated Tuple:", new_student)
+for i in new_student:
+    print(i)
+
+
+Output:-
+Student Record Case Study
+
+Student Tuple: ('Sundaram', 21, 'BCA', 88, 91, 79)
+
+Name: Sundaram
+Age: 21
+Department: BCA
+
+Marks: (88, 91, 79)
+
+Total marks: 258
+Highest mark: 91
+Lowest mark: 79
+
+Length of Tuple: 6
+
+Count of 88: 1
+Index of 91: 4
+
+Updated Tuple: ('Sundaram', 21, 'BCA', 88, 91, 79, 'A Grade')
+
+Sundaram
+21
+BCA
+88
+91
+79
+A Grade
