@@ -1,0 +1,65 @@
+Aim:- Write a Program to demonstrate List and Related Functions in Python 
+
+
+Algorithm:-
+
+Step 1: Start
+Step 2: Create a list containing "5G", "4G", and "Cellular Network".
+Step 3: Display the initial list.
+Step 4: Add "3GPP" to the list using append().
+Step 5: Add "ITU" and "IMT-2020" using extend().
+Step 6: Insert "CELLS" at position 1 using insert().
+Step 7: Remove "4G" from the list using remove().
+Step 8: Remove an element using pop() and store it.
+Step 9: Find the index of "3GPP" using index().
+Step 10: Count occurrences of "5G" using count().
+Step 11: Copy the list using copy().
+Step 12: Clear the list using clear().
+Step 13: Display all results.
+Step 14: Stop.
+
+
+
+Code:- #List and Related Functions
+
+
+keyword = ["5G", "4G", "Cellular Network"]
+
+print("Initial List:", keyword)
+
+keyword.append("3GPP")
+
+keyword.extend(["ITU", "IMT-2020"])
+
+keyword.insert(1, "CELLS")
+
+keyword.remove("4G")
+
+removed_item = keyword.pop(2)
+
+index_position = keyword.index("3GPP")
+
+count_5g = keyword.count("5G")
+
+print("List before clear():", keyword)
+
+copied_list = keyword.copy()
+
+keyword.clear()
+
+print("Final list after clear():", keyword)
+print("Removed item using pop():", removed_item)
+print("Index of 3GPP:", index_position)
+print("Count of 5G:", count_5g)
+print("Copied list before clear():", copied_list)
+
+
+Output:-
+
+Initial List: ['5G', '4G', 'Cellular Network']
+List before clear(): ['5G', 'CELLS', '3GPP', 'ITU', 'IMT-2020']
+Final list after clear(): []
+Removed item using pop(): Cellular Network
+Index of 3GPP: 2
+Count of 5G: 1
+Copied list before clear(): ['5G', 'CELLS', '3GPP', 'ITU', 'IMT-2020']
