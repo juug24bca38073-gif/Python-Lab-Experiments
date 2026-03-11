@@ -1,0 +1,75 @@
+Aim:- Write a Program to Implement Control flow Statments and Looping State
+
+Algorithm:-
+
+Step:1.	Start
+Step:2.	Initialize runs, balls, wickets, runs conceded, overs, and catches.
+Step:3.	Calculate strike rate using sr = (runs / balls) × 100.
+Step:4.	Calculate economy rate using eco = runs_conceded / overs.
+Step:5.	Determine batting performance using runs and strike rate conditions.
+Step:6.	Determine bowling performance using wickets and economy rate conditions.
+Step:7.	Determine fielding performance using number of catches.
+Step:8.	Evaluate overall performance based on batting and bowling results.
+Step:9.	Display batting, bowling, fielding, and overall result.
+Step:10. Stop.
+
+
+
+Code:- #Contol Statements and Looping Statements 
+
+
+runs = 148
+balls = 50
+wickets = 4
+runs_conceded = 29
+overs = 2
+catches = 3
+
+sr = (runs / balls) * 100
+eco = runs_conceded / overs
+
+if runs >= 50 and sr >= 120:
+    bat = "Excellent"
+elif runs >= 36 and sr >= 100:
+    bat = "Good"
+elif runs >= 20:
+    bat = "Average"
+else:
+    bat = "Poor"
+
+if wickets >= 3 and eco <= 6:
+    bowl = "Excellent"
+elif wickets >= 2 and eco <= 8:
+    bowl = "Good"
+elif wickets >= 1:
+    bowl = "Average"
+else:
+    bowl = "Poor"
+
+if catches >= 2:
+    field = "Outstanding"
+elif catches == 1:
+    field = "Active"
+else:
+    field = "Need Improvement"
+
+if bat == "Excellent" and bowl == "Excellent":
+    result = "Star All Rounder"
+elif bat == "Good" and bowl == "Good":
+    result = "Strong All Rounder"
+elif bat == "Good" or bowl == "Good":
+    result = "Supporting All Rounder"
+else:
+    result = "Needs Improvement"
+
+print("Batting Performance:", bat)
+print("Bowling Performance:", bowl)
+print("Fielding Performance:", field)
+print("Overall Result:", result)
+
+
+Output:-
+Batting Performance: Excellent
+Bowling Performance: Average
+Fielding Performance: Outstanding
+Overall Result: Needs Improvement
