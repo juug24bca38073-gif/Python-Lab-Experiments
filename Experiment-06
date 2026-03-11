@@ -1,0 +1,58 @@
+Aim:- WRITE A PROGRAM TO DEMONSTRATE DICTIONARY AND RELATED FUNCTIONS IN PYTHON
+
+
+ALGORITHM:-
+STEP 1: start the program
+STEP 2: create dictionary containing names and phone numbers 
+STEP 3: display a contact using pop()
+STEP 4: display all contacts using items() and a loop
+STEP 5: create a copy using copy() and retrieve a numberusing get()  
+STEP 6: add a new contact using update()
+STEP 7: display the updated phonebook and stop the program
+
+CODE:- #DICITONARY
+
+phonebook = {
+    "arjun": "9333919689",
+    "neha": "9351658721",
+    "kavya": "9353968901",
+    "rohit": "9457562102",
+    "meera": "2546789520"
+}
+
+print("Initial Phonebook:", phonebook)
+
+print("Deleted meera:", phonebook.pop("meera"))
+print("Phonebook now:", phonebook)
+
+print("All contacts:")
+for name, number in phonebook.items():
+    print(name, ":", number)
+
+print("All names:", list(phonebook.keys()))
+print("All numbers:", list(phonebook.values()))
+
+phonebook_copy = phonebook.copy()
+print("Copied phonebook:", phonebook_copy)
+
+print("Neha's number:", phonebook.get("neha"))
+
+phonebook.update({"rahul": "9876543210"})
+print("Updated phonebook:", phonebook)
+
+
+OUTPUT:-
+Initial Phonebook: {'arjun': '9333919689', 'neha': '9351658721', 'kavya': '9353968901', 'rohit': '9457562102', 'meera': '2546789520'}
+Deleted meera: 2546789520
+Phonebook now: {'arjun': '9333919689', 'neha': '9351658721', 'kavya': '9353968901', 'rohit': '9457562102'}
+All contacts:
+arjun : 9333919689
+neha : 9351658721
+kavya : 9353968901
+rohit : 9457562102
+
+All names: ['arjun', 'neha', 'kavya', 'rohit']
+All numbers: ['9333919689', '9351658721', '9353968901', '9457562102']
+Copied phonebook: {'arjun': '9333919689', 'neha': '9351658721', 'kavya': '9353968901', 'rohit': '9457562102'}
+Neha's number: 9351658721
+Updated phonebook: {'arjun': '9333919689', 'neha': '9351658721', 'kavya': '9353968901', 'rohit': '9457562102', 'rahul': '9876543210'}
